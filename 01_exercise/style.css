@@ -4,6 +4,7 @@ h1 {
 }
 
 .robots {
+	display: flex;
 }
 
 .head, 
@@ -17,23 +18,24 @@ h1 {
 
 .head { 
 	width: 200px; 
-	margin: 0 auto; 
+	margin-left: 50px ; 
 	height: 150px; 
 	border-radius: 200px 200px 0 0; 
 	margin-bottom: 10px;
+	
 } 
 
-.eyes {
+.eyes { display: flex;
 	
 }
 
-.head:hover {
+/*.head:hover {
 	width: 300px;
     transition: 1s ease-in-out;
 }
-
+*/
 .upper_body { 
-	width: 300px; 
+	width: 320px; 
 	height: 150px;
 	display: flex; 
 } 
@@ -73,9 +75,8 @@ h1 {
 } 
 
 .left_leg { 
-	margin-left: 45px; 
-} 
-
+	margin-left: 25px; 
+} /*
 .left_leg:hover {
 	-webkit-transform: rotate(20deg);
     -moz-transform: rotate(20deg);
@@ -83,9 +84,10 @@ h1 {
     -ms-transform: rotate(20deg);
     transform: rotate(20deg);
 }
-
+*/
 .right_leg { 
-	margin-left: 30px; 
+margin-top: -120px;
+margin-left: 120px;
 }
 
 .left_eye, .right_eye { 
