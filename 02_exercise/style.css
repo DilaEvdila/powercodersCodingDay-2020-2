@@ -1,0 +1,103 @@
+body {
+    display: grid;
+    grid-template-rows: 10vh 20vh auto;
+    
+}
+ul li {
+    list-style-type: none;
+
+}
+
+ul li a {
+    text-decoration: none;
+    color: black;
+
+}
+header{
+display: flex;
+background-color: aquamarine;
+padding: 10px;}
+header img{
+    height: 80px;
+}
+
+header h1{   
+
+    font-style: italic;
+}
+
+
+main{
+display: grid;
+min-height: 100%;
+
+
+min-height: calc(100vh- 601px -100x) ;
+grid-template-columns: 1fr 1fr 1fr;
+margin-bottom: 0;
+}
+nav{
+    height:  300px;
+    padding: 30px;
+    background: burlywood;
+    width: 20vh;
+    grid-template-columns: 1;
+    border-right: solid black 1px;
+    margin-right: 0px;
+}
+nav ul li a {
+
+
+    font-size: 20px;
+    
+    padding: 30px;
+}
+article ul li:nth-child(1) {
+    background: greenyellow;
+}
+article ul li:nth-child(2) {
+    background: blue;
+}
+article ul li:nth-child(3) {
+    background: yellow;
+
+}
+
+article ul li{
+    display: grid;
+    height: 40vh;
+    width: 140vh;
+    margin: 10px;
+    border: solid 1px grey;
+}
+
+aside h1{
+
+    border: green solid 2px;
+    height: 100px;
+}
+
+
+/* tablet screen*/
+@media screen and (max-width: 768px) {
+    header{
+        padding-bottom: 20px;
+        height: 60px;
+        margin-bottom: 5px;
+    }
+    nav  {grid-template-columns: 1fr;
+        width: 100vh;
+    }
+   
+
+    /*main content*/
+    main{
+        display: grid;
+              grid-template-columns: 1fr;
+              height: auto;
+              width: 100%;
+        }
+    
+}
+
+
