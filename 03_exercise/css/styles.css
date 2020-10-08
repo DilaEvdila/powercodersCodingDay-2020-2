@@ -1,6 +1,7 @@
 /* Text Elements */
 
 h1 {
+  grid-column-:  ;
   margin-bottom: .75rem;
   color: #dae4e9;
   letter-spacing: -.015em;
@@ -42,6 +43,8 @@ section {
 
 main {
   padding: 2vh 4vw;
+  grid-template-columns: 1fr 1fr 1fr;
+
 }
 
 img {
@@ -49,7 +52,9 @@ img {
 }
 
 .fig-1 {
-  max-width: 240px;
+  max-width: 140px;
+  grid-column-start: 1;
+  grid-column-end: 1;
 }
 
 picture {
